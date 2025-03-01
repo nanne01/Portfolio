@@ -461,10 +461,8 @@ img {
 
 .navbar {
     background: black !important;
-    padding: 5px 10px; 
-    height: 30px; 
-    display: flex;
-    justify-content: right;
+    padding: 10px 15px; /* Aumenté el padding */
+    height: auto; /* Deja que la altura se ajuste automáticamente */
 }
 
 .navbar-nav .nav-item {
@@ -482,6 +480,7 @@ img {
     border: none;
     background-color: transparent;
     padding: 5px;
+    outline: none; /* Evita el borde azul en algunos navegadores */
 }
 
 .navbar-toggler-icon {
@@ -509,12 +508,12 @@ img {
 
 /* Responsive */
 @media (max-width: 991px) {
-    .navbar-nav {
-        text-align: center;
-    }
-
     .navbar-collapse {
         background: black;
         padding: 10px;
+    }
+    
+    .navbar-nav {
+        flex-direction: column; /* Asegura que los elementos se apilen en móviles */
     }
 }
