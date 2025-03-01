@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/ScrollTrigger.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+        <div class="container">
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto text-center">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Portfolio
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#illustration">Illustration</a></li>
+                            <li><a class="dropdown-item" href="#poster">Posters</a></li>
+                            <li><a class="dropdown-item" href="#editorial">Editorial Design</a></li>
+                            <li><a class="dropdown-item" href="#web">Web Design</a></li>
+                            <li><a class="dropdown-item" href="#animation">Animation</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <main>
+        <section class="title">
+            <h2>Welcome to</h2>
+            <h1 class="neon">My Portfolio</h1>
+            <h3>Here you can discover how my digital designer world works. Enjoy it!</h3>
+        </section>
+
+        <scetion class="portfolio-sections">
+            <div class="container">
+                <div class="column">
+                    <!--Illustration section-->
+                    <div id="illustration">
+                        <div class="portfolio-item">
+                            <h3><img src="img/illustration.png" alt=""> Illustration</h3>
+                            <p>Stories to life through creative visuals and digital techniques.</p>
+                            <div class="project row">
+                                <div class="project-box col-md-2">
+                                    <h4>Nutrias</h4>
+                                    <img src="img/Nutrias.webp" alt="Nutrias">
+                                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalNutrias">
+                                        <ion-icon name="search-outline"></ion-icon>
+                                    </button>
+                                </div>
+
+                                <div class="project-box col-md-2">
+                                    <h4>Jade</h4>
+                                    <img src="img/Jade.webp" alt="Jade">
+                                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalJade">
+                                        <ion-icon name="search-outline"></ion-icon>
+                                    </button>
+                                </div>
+
+                                <div class="project-box col-md-2">
+                                    <h4>El Principito</h4>
+                                    <img src="img/El Principito.webp" alt="ElPrincipito">
+                                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalElPrincipito">
+                                        <ion-icon name="search-outline"></ion-icon>
+                                    </button>
+                                </div>
+
+                                <div class="project-box col-md-2">
+                                    <h4>Ranitas</h4>
+                                    <img src="img/ranas.webp" alt="Ranas">
+                                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalRanas">
+                                        <ion-icon name="search-outline"></ion-icon>
+                                    </button>
+                                </div>
+
+                                <div class="project-box col-md-2">
+                                    <h4>Semiosfera</h4>
+                                    <img src="img/contraportada.webp" alt="Salud">
+                                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalSemiosfera">
+                                        <ion-icon name="search-outline"></ion-icon>
+                                    </button>
+                                </div>
+                            </div>  
+                        </div>
+                    <!--Modals-->
+                        <div class="modal fade custom-modal" id="modalNutrias" tabindex="-1" aria-hidden="true">
+                            <div class="modal-dialog modal-lg modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">Nutrias</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body text-center">
+                                        <div class="d-flex justify-content-center">
+                                            <img src="img/Nutrias.webp" alt="Nutrias" class="img-fluid" style="max-width: 50%; height: auto;">
+                                        </div>
+                                    </div>
+                                    <p>This was drawn using Adobe Photoshop on tablet (2023)</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="modal fade custom-modal" id="modalJade" tabindex="-1" aria-hidden="true">
+                            <div class="modal-dialog modal-lg modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">Jade</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body text-center">
+                                        <div class="d-flex justify-content-center">
+                                            <img src="img/Jade.webp" alt="Nutrias" class="img-fluid" style="max-width: 50%; height: auto;">
+                                        </div>
+                                    </div>
+                                    <p>Created this character based on the description of a person´s character. Drawn using Affinity Designer (2023)</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="modal fade custom-modal" id="modalElPrincipito" tabindex="-1" aria-hidden="true">
+                            <div class="modal-dialog modal-lg modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">El Principito</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body text-center">
+                                        <div class="d-flex justify-content-center">
+                                            <img src="img/El Principito.webp" alt="ElPrincipito" class="img-fluid" style="max-width: 50%; height: auto;">
+                                        </div>
+                                    </div>
+                                    <p>This was drawn using Adobe Photoshop on tablet (2023)</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="modal fade custom-modal" id="modalRanas" tabindex="-1" aria-hidden="true">
+                            <div class="modal-dialog modal-lg modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">Ranitas</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body text-center">
+                                        <div class="d-flex justify-content-center">
+                                            <img src="img/ranas.webp" alt="Ranas" class="img-fluid" style="max-width: 50%; height: auto;">
+                                        </div>
+                                    </div>
+                                    <p>This was drawn using Adobe Photoshop on tablet (2023)</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="modal fade custom-modal" id="modalSemiosfera" tabindex="-1" aria-hidden="true">
+                            <div class="modal-dialog modal-lg modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">Semiosfera</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body text-center">
+                                        <div class="d-flex justify-content-center">
+                                            <img src="img/contraportada.webp" alt="Salud" class="img-fluid" style="max-width: 50%; height: auto;">
+                                        </div>
+                                    </div>
+                                    <p>Drawn using Affinity Designer with the purpose to be de back cover of an editorial piece project I made with my classmates called "Semiosfera". (2024)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Poster Section-->
+                    <div id="poster">
+                        <div class="portfolio-item section-poster">
+                            <h3><img src="img/posters.png" alt=""> Posters</h3>
+                            <p>Designed to grab attention and communicate messages effectively.</p>
+                            <div class="project posters row">
+                                <div class="poster-box col-md-6">
+                                    <h4>Decorative</h4>
+                                    <img src="img/Decorativas.webp" alt="Decorative" loading="lazy">
+                                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalDecorative">
+                                        <ion-icon name="search-outline"></ion-icon>
+                                    </button>
+                                </div>
+
+                                <div class="poster-box col-md-6">
+                                    <h4>Script</h4>
+                                    <img src="img/Script.webp" alt="Script" loading="lazy">
+                                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalScript">
+                                        <ion-icon name="search-outline"></ion-icon>
+                                    </button>
+                                </div>
+
+                                <div class="poster-box col-md-6">
+                                    <h4>Hornearte</h4>
+                                    <img src="img/Banner.webp" alt="Banner" loading="lazy">
+                                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalBanner">
+                                        <ion-icon name="search-outline"></ion-icon>
+                                    </button>
+                                </div>
+
+                                <div class="poster-box col-md-6">
+                                    <h4>Honey Benefits</h4>
+                                    <img src="img/Miel.webp" alt="Miel" loading="lazy">
+                                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalMiel">
+                                        <ion-icon name="search-outline"></ion-icon>
+                                    </button>
+                                </div>
+
+                                <div class="poster-box col-md-6">
+                                    <h4>Huella</h4>
+                                    <img src="img/portada.webp" alt="Huella" loading="lazy">
+                                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalHuella">
+                                        <ion-icon name="search-outline"></ion-icon>
+                                    </button>
+                                </div>
+
+                                <div class="poster-box col-md-6">
+                                    <h4>Flyer</h4>
+                                    <img src="img/volante.webp" alt="Volante" loading="lazy">
+                                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalVolante">
+                                        <ion-icon name="search-outline"></ion-icon>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                    <!--Modals-->
+                        <div class="modal fade custom-modal" id="modalDecorative" tabindex="-1" aria-hidden="true">
+                            <div class="modal-dialog modal-lg modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">Decorative</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body text-center">
+                                        <div class="d-flex justify-content-center">
+                                            <img src="img/Decorativas.webp" alt="Decorative" class="img-fluid" style="max-width: 50%; height: auto;">
+                                        </div>
+                                    </div>
+                                    <p>Poster part of a typography catalogue. (2022)</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="modal fade custom-modal" id="modalScript" tabindex="-1" aria-hidden="true">
+                            <div class="modal-dialog modal-lg modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">Script</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body text-center">
+                                        <div class="d-flex justify-content-center">
+                                            <img src="img/Script.webp" alt="Script" class="img-fluid" style="max-width: 50%; height: auto;">
+                                        </div>
+                                    </div>
+                                    <p>Poster part of a typography catalogue. (2022)</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="modal fade custom-modal" id="modalBanner" tabindex="-1" aria-hidden="true">
+                            <div class="modal-dialog modal-lg modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">Hornearte</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body text-center">
+                                        <div class="d-flex justify-content-center">
+                                            <img src="img/Banner.webp" alt="Banner" class="img-fluid" style="max-width: 50%; height: auto;">
+                                        </div>
+                                    </div>
+                                    <p>"Hornearte" is a cookie brand I created with two more classmates for a marketing college project. This is a banner to promotionate the different cookie flavours. (2023) </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="modal fade custom-modal" id="modalMiel" tabindex="-1" aria-hidden="true">
+                            <div class="modal-dialog modal-lg modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">Honey Benefits</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body text-center">
+                                        <div class="d-flex justify-content-center">
+                                            <img src="img/Miel.webp" alt="Miel" class="img-fluid" style="max-width: 50%; height: auto;">
+                                        </div>
+                                    </div>
+                                    <p>I designed this infographic based on the honey benefits research that was provided to me. (2024)</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="modal fade custom-modal" id="modalHuella" tabindex="-1" aria-hidden="true">
+                            <div class="modal-dialog modal-lg modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">Huella</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body text-center">
+                                        <div class="d-flex justify-content-center">
+                                            <img src="img/portada.webp" alt="Huella" class="img-fluid" style="max-width: 50%; height: auto;">
+                                        </div>
+                                    </div>
+                                    <p>This was the vinyl cover I designed for a marketing college project I worked on in pair. (2024)</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="modal fade custom-modal" id="modalVolante" tabindex="-1" aria-hidden="true">
+                            <div class="modal-dialog modal-lg modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">Flyer</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body text-center">
+                                        <div class="d-flex justify-content-center">
+                                            <img src="img/volante.webp" alt="Volante" class="img-fluid" style="max-width: 50%; height: auto;">
+                                        </div>
+                                    </div>
+                                    <p>This was a Coca Cola flyer I did in Adobe Photoshop. (2023)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Editorial Section-->
+                    <div id="editorial">
+                        <div class="portfolio-item section-editorial">
+                            <h3><img src="/img/editorial.png" alt="">Editorial Design</h3>
+                            <p>Transforming words into stunning layouts with strong visual appeal.</p>
+                            <div class="project">
+                                <div class="editorial-row">
+                                    <div class="editorial-box">
+                                        <h4>Bliss Newsletter</h4>
+                                        <div class="editorial-row">
+                                            <div class="margin">
+                                                <img src="img/boletin.webp" alt="Decorative">
+                                            </div>
+                                            <div>
+                                                <p>This newsletter is part of an editorial package designed for a college project. (2023)</p>
+                                                <a href="https://online.fliphtml5.com/hhahj/jpst/" target="_blank" rel="noopener noreferrer">
+                                                    <button class="btn btn-primary">
+                                                        <ion-icon name="link"></ion-icon>
+                                                    </button>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+    
+                                    <div class="editorial-box">
+                                        <h4>Bliss Catalogue</h4>
+                                        <div class="editorial-row">
+                                            <div class="margin">
+                                                <img src="img/catálogo.webp" alt="Decorative">
+                                            </div>
+                                            <div>
+                                                <p>This catalogue is part of an editorial package designed for a college project. (2023)</p>
+                                                <a href="https://online.fliphtml5.com/hhahj/nibc/" target="_blank" rel="noopener noreferrer">
+                                                    <button class="btn btn-primary">
+                                                        <ion-icon name="link"></ion-icon>
+                                                    </button>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="editorial-row">
+                                    <div class="editorial-box">
+                                        <h4>Bliss Magazine</h4>
+                                        <div class="editorial-row">
+                                            <div class="margin">
+                                                <img src="img/revista.webp" alt="Decorative">
+                                            </div>
+                                            <div>
+                                                <p>This magazine is part of an editorial package designed for a college project. (2023)</p>
+                                                <a href="https://online.fliphtml5.com/hhahj/tvey/" target="_blank" rel="noopener noreferrer">
+                                                    <button class="btn btn-primary">
+                                                        <ion-icon name="link"></ion-icon>
+                                                    </button>
+                                                </a>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+    
+                                    <div class="editorial-box">
+                                        <h4>Semiósfera</h4>
+                                        <div class="editorial-row">
+                                            <div class="margin">
+                                                <img src="img/semiósfera.webp" alt="Decorative">
+                                            </div>
+                                            <div>
+                                                <p>"Semiósfera" is a team editorial work for a semiotics project. (2024)</p>
+                                                <a href="https://online.fliphtml5.com/hhahj/kzkn/" target="_blank" rel="noopener noreferrer">
+                                                    <button class="btn btn-primary">
+                                                        <ion-icon name="link"></ion-icon>
+                                                    </button>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="editorial-row">
+                                    <div class="editorial-box">
+                                        <h4>Green Glamour</h4>
+                                        <div class="editorial-row">
+                                            <div class="margin">
+                                                <img src="img/gg.webp" alt="Decorative">
+                                            </div>
+                                            <div>
+                                                <p>An animated & interactive magazine. (2024)</p>
+                                                <a href="https://www.canva.com/design/DAGI_YFukqE/RCfbne4zjP4TTQCT5mcwuw/edit?utm_content=DAGI_YFukqE&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank" rel="noopener noreferrer">
+                                                    <button class="btn btn-primary">
+                                                        <ion-icon name="link"></ion-icon>
+                                                    </button>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+    
+                                    <div class="editorial-box">
+                                        <h4>Bliss Newsletter</h4>
+                                        <div class="editorial-row">
+                                            <div class="margin">
+                                                <img src="img/Decorativas.webp" alt="Decorative">
+                                            </div>
+                                            <div>
+                                                <p>This newsletter is part of an editorial package designed for a college project. (2023)</p>
+                                                <button class="btn btn-primary">
+                                                    <ion-icon name="link"></ion-icon>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!--Web Section-->
+                    <div id="web">
+                        <div class="portfolio-item section-web">
+                            <h3><img src="img/web.png" alt=""> Web Design</h3>
+                            <p>Creating responsive and engaging websites for different needs.</p>
+                            <div class="project webs-box">
+                                <div class="web-row row">
+                                    <div class="web-box col-md-6">
+                                        <img src="img/Lumiere.webp" alt="">
+                                        <h4>Lumiere</h4>
+                                        <p>This is a project worked by three people about a fake jewelry online store. (2024)</p>
+                                        <a href="https://nanne20.github.io/Lumiere/" target="_blank" rel="noopener noreferrer">
+                                            <button class="btn btn-primary">
+                                                <ion-icon name="link"></ion-icon> 
+                                            </button>
+                                        </a>
+                                    </div>
+                                    <div class="web-box col-md-6">
+                                        <img src="img/Enchanté.webp" alt="">
+                                        <h4>Enchanté</h4>
+                                        <p>This is a project worked by three people about a beauty salon we made up. (2024)</p>
+                                        <a href="https://nanne20.github.io/Enchante/ " target="_blank" rel="noopener noreferrer">
+                                            <button class="btn btn-primary">
+                                                <ion-icon name="link"></ion-icon>
+                                            </button>
+                                        </a>
+                                    </div>
+                                    <div class="web-box col-md-6">
+                                        <img src="img/Prisma.webp" alt="">
+                                        <h4>WEb 1</h4>
+                                        <p>This was a teamwork project. Is the most complete landing page my classmates and I worked on and it is about our fictional creative studio. (2024)</p>
+                                        <a href="https://nanne20.github.io/Prisma/" target="_blank" rel="noopener noreferrer">
+                                            <button class="btn btn-primary">
+                                                <ion-icon name="link"></ion-icon>
+                                            </button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Animation section-->
+                    <div id="animation">
+                        <div class="portfolio-item section-animation">
+                            <h3><img src="img/animation.webp" alt="">Animation</h3>
+                            <p>Ideas that came to life with animations. 2D & 3D college projects.</p>
+                            <div class="container mt-4">
+                                <div class="row">
+                                    <!-- Primer Carrusel -->
+                                    <div class="col-md-6">
+                                        <div id="carouselOne" class="carousel slide" data-bs-ride="carousel">
+                                            <h4>2D animation</h4>
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <div class="card review-card text-center">
+                                                        <img src="img/Agua.webp" class="carousel-image">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">Agua</h5>
+                                                            <p class="card-text">Project carried out to raise awareness on the use of water. (2024)</p>
+                                                            <a href="https://youtu.be/D1T85-zDBEU" target="_blank" class="btn btn-primary">
+                                                                Watch Project
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <div class="card review-card text-center">
+                                                        <img src="img/Despierta.webp" class="carousel-image">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">Despierta</h5>
+                                                            <p class="card-text">Project made about the use of technology. (2024)</p>
+                                                            <a href="https://youtu.be/F-B1Julgg94" target="_blank" class="btn btn-primary">
+                                                                Watch Project
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <div class="card review-card text-center">
+                                                        <img src="img/Rejilla.webp" class="carousel-image">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">Hornear con Magia</h5>
+                                                            <p class="card-text">Project made using just Adobe After Effects. (2024)</p>
+                                                            <a href="https://youtu.be/UoJnlrlUaAI" target="_blank" class="btn btn-primary">
+                                                                Watch Project
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <div class="card review-card text-center">
+                                                        <img src="img/Vortix.webp" class="carousel-image">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">Vórtix</h5>
+                                                            <p class="card-text">Project drawn in Affinity Designer and edited with Adobe After Effects and Adobe Premiere. (2024)</p>
+                                                            <a href="https://youtu.be/m3p62Y43wBo" target="_blank" class="btn btn-primary">
+                                                                Watch Project
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselOne" data-bs-slide="prev">
+                                                <span class="carousel-control-prev-icon"></span>
+                                            </button>
+                                            <button class="carousel-control-next" type="button" data-bs-target="#carouselOne" data-bs-slide="next">
+                                                <span class="carousel-control-next-icon"></span>
+                                            </button>
+                                        </div>
+                                    </div>
+                            
+                                    <!-- Segundo Carrusel -->
+                                    <div class="col-md-6">
+                                        <div id="carouselTwo" class="carousel slide" data-bs-ride="carousel">
+                                            <h4>3D modeling & animation</h4>
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <div class="card review-card text-center">
+                                                        <img src="img/Cactus.webp" class="carousel-image">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">Cactus</h5>
+                                                            <p class="card-text">3D modeling using Cinema 4D. (2024)</p>
+                                                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalCactus">Watch Proyect</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <div class="card review-card text-center">
+                                                        <img src="img/Coca cola.webp" class="carousel-image">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">Coca Cola</h5>
+                                                            <p class="card-text">3D modeling using Cinema 4D. (2024)</p>
+                                                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalCocaCola">Watch Proyect</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <div class="card review-card text-center">
+                                                        <img src="img/Automática.webp" class="carousel-image">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">Automatic Animation</h5>
+                                                            <p class="card-text">3D modeling and automatic animation in Dinema 4D. (2024)</p>
+                                                            <a href="https://youtu.be/iOliFdMPDE4" target="_blank" class="btn btn-primary">
+                                                                Watch Project
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <div class="card review-card text-center">
+                                                        <img src="img/Manual.webp" class="carousel-image" >
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">Manual Animation</h5>
+                                                            <p class="card-text">3D modeling and manual animation in Dinema 4D. (2024)</p>
+                                                            <a href="https://youtu.be/cEN6HWwHhJU" target="_blank" class="btn btn-primary">
+                                                                Watch Project
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselTwo" data-bs-slide="prev">
+                                                <span class="carousel-control-prev-icon"></span>
+                                            </button>
+                                            <button class="carousel-control-next" type="button" data-bs-target="#carouselTwo" data-bs-slide="next">
+                                                <span class="carousel-control-next-icon"></span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>                            
+                        </div>
+
+                        <div class="modal fade custom-modal" id="modalCactus" tabindex="-1" aria-hidden="true">
+                            <div class="modal-dialog modal-lg modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">Cactus</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body text-center">
+                                        <div class="d-flex justify-content-center">
+                                            <img src="img/Cactus.webp" alt="Cactus" class="img-fluid" style="max-width: 50%; height: auto;">
+                                        </div>
+                                    </div>
+                                    <p>3D modeling using Cinema 4D. (2024)</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal fade custom-modal" id="modalCocaCola" tabindex="-1" aria-hidden="true">
+                            <div class="modal-dialog modal-lg modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">Coca Cola</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body text-center">
+                                        <div class="d-flex justify-content-center">
+                                            <img src="img/Coca cola.webp" alt="CocaCola" class="img-fluid" style="max-width: 50%; height: auto;">
+                                        </div>
+                                    </div>
+                                    <p>3D modeling using Cinema 4D. (2024)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <section class="footer text-white py-2 my-0">   
+        <div class="box text-center">
+            <h4 class="mb-4">If you want to contact me, these are some good options</h4>
+            <div class="contact-links d-flex justify-content-center gap-3 flex-wrap">
+                <a href="https://www.instagram.com/arianne_iba?igsh=ZnV1NHVnMDZkMHBz&utm_source=qr" class="contact-item d-flex align-items-center gap-2 text-white text-decoration-none">
+                    <img src="img/instagram.png" alt="Instagram" width="25"> arianne_iba
+                </a>
+                <a href="https://wa.link/yu0e9r" target="blank" class="contact-item d-flex align-items-center gap-2 text-white text-decoration-none">
+                    <img src="img/teléfono.png" alt="Phone" width="25"> +591 77646010
+                </a>
+                <a href="https://mail.google.com" target="blank" class="contact-item d-flex align-items-center gap-2 text-white text-decoration-none">
+                    <img src="img/correo.webp" alt="Email" width="25"> ibanezaponte@gmail.com
+                </a>
+            </div>
+            <div class="mt-4">
+                <a href="index.html" class="back d-inline-block">
+                    <img src="img/back.webp" alt="Back" width="40">
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="javascript/animaciones.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+         gsap.from(".btn-primary", {duration: 1, y: 50, opacity: 0, delay: 1});
+         gsap.to(".btn-primary", {y: 10, visibility: "visible", opacity: 1 });
+         gsap.fromTo(".footer", 
+            { opacity: 0, y: 50 },
+            {
+             opacity: 1,
+             y: 0,
+             duration: 1.2,
+            ease: "power2.out",
+             scrollTrigger: {
+            trigger: ".footer",
+            start: "top 90%",  
+            end: "top 50%",    
+            toggleActions: "play none none reverse"}});
+            
+    </script>
+
+</body>
+</html>
