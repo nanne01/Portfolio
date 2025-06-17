@@ -27,6 +27,12 @@ document.addEventListener("DOMContentLoaded", function () {
             opacity: 0
         },
         {
+            elements: "#internship .internship-card",
+            trigger: "#internship",
+            y: 30,
+            opacity: 0
+        },
+        {
             elements: ".carousel",
             trigger: "#animation",
             y: 50,
@@ -50,7 +56,7 @@ document.addEventListener("DOMContentLoaded", function () {
             ease: "power2.out",
             scrollTrigger: {
                 trigger: anim.trigger,
-                start: "top 80%",
+                start: anim.start || "top 80%",
                 toggleActions: "restart none none restart"
             }
         });
